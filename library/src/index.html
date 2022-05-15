@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <button class="btn btn-primary m-20" id="first">Fade out first text</button>
+        <button class="btn btn-dark m-20" data-count="second">Fade out second text</button>
+        <button class="btn btn-warning m-20">Fade out all text</button>
+
+        <!--Dropdown menu-->
+
+        <div class="dropdown">
+            <button class="dropdown__toggle btn btn-primary" id="dropdownMenuButton">Dropdown button</button>
+            <div class="dropdown__menu" data-toggle-id="dropdownMenuButton">
+                <a href="#" class="dropdown__item">Action #1</a>
+                <a href="#" class="dropdown__item">Action #2</a>
+                <a href="#" class="dropdown__item">Action #3</a>
+            </div>
+        </div>
+
+        <!-- Card -->
+
+        <div class="goods d-flex f-space-between">
+            <div class="card">
+                <img class="card__img" src="https://photo-works.net/images/europe-landscape-photo-edited.jpg"
+                    alt="photo">
+                <div class="card__body">
+                    <div class="card__title">Card title</div>
+                    <p class="card__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                    <a href="#" id="trigger" class="btn btn-primary" data-toggle="modal"
+                        data-target="#exampleModal">Link to</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="card__img" src="https://photo-works.net/images/europe-landscape-photo-edited.jpg"
+                    alt="photo">
+                <div class="card__body">
+                    <div class="card__title">Card title #2</div>
+                    <p class="card__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                    <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal2">Link to</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+
+        <!-- <div class="modal" id="exampleModal">
+            <div class="modal__dialog">
+                <div class="modal__content">
+                    <button class="close" data-close>
+                        <span>&times;</span>
+                    </button>
+                    <div class="modal__header">
+                        <div class="modat__title">
+                            Modal title
+                        </div>
+                    </div>
+                    <div class="modal__body">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, quisquam non corporis nulla
+                        recusandae hic voluptatibus doloribus suscipit molestias perferendis veniam iusto, commodi esse
+                        eius laudantium aut, illo praesentium quo.
+                    </div>
+                    <div class="modal__footer">
+                        <button class="btn btn-danger" data-close>Close</button>
+                        <button class="btn btn-success">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+        <div class="modal" id="exampleModal2">
+            <div class="modal__dialog">
+                <div class="modal__content">
+                    <button class="close" data-close>
+                        <span>&times;</span>
+                    </button>
+                    <div class="modal__header">
+                        <div class="modat__title">
+                            Modal title #2
+                        </div>
+                    </div>
+                    <div class="modal__body">
+                        Some text
+                    </div>
+                    <div class="modal__footer">
+                        <button class="btn btn-danger" data-close>Close</button>
+                        <button class="btn btn-success">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tabs -->
+
+        <div class="tab mt-20 block-center">
+            <div class="tab__panel" data-tabpanel>
+                <div class="tab__item tab__item-active">Content 1</div>
+                <div class="tab__item">Content 2</div>
+                <div class="tab__item">Content 3</div>
+            </div>
+            <div class="tab__content tab__content-active">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. At eveniet, sint unde et aspernatur facere
+                reprehenderit perferendis porro, omnis illum dolorum eius laudantium mollitia, tempore rerum nam non
+                corporis soluta.
+                <br> <br>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis veniam dicta, facere magnam sunt
+                deserunt? Eligendi, architecto, atque quam dicta quisquam ratione natus facere recusandae iusto rem,
+                sint ipsam quas!
+            </div>
+            <div class="tab__content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. At eveniet, sint unde et aspernatur facere
+                reprehenderit perferendis porro, omnis illum dolorum eius laudantium mollitia, tempore rerum nam non
+                corporis soluta.
+                <br> <br>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis veniam dicta, facere magnam sunt
+                deserunt? Eligendi, architecto, atque quam dicta quisquam ratione natus facere recusandae iusto rem,
+                sint ipsam quas!
+                <br><br>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio nobis dolorem at sequi ipsam hic labore
+                cumque distinctio harum aliquam maxime pariatur ipsa amet reprehenderit voluptates omnis, inventore in
+                sint?
+            </div>
+            <div class="tab__content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. At eveniet, sint unde et aspernatur facere
+                reprehenderit perferendis porro, omnis illum dolorum eius laudantium mollitia, tempore rerum nam non
+                corporis soluta.
+            </div>
+        </div>
+
+        <!-- Accordion -->
+
+        <div class="accordion mt-20 block-center">
+            <div class="accordion__head">
+                <span>Collapse first element</span>
+            </div>
+            <div class="accordion__content">
+                <div class="accordion__inner">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, sint soluta! Officia nihil
+                    aliquid voluptates, error assumenda inventore consectetur dolor pariatur harum suscipit aliquam a
+                    excepturi neque nobis est sed.
+                </div>
+            </div>
+            <div class="accordion__head">
+                <span>Collapse second element</span>
+            </div>
+            <div class="accordion__content">
+                <div class="accordion__inner">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, sint soluta! Officia nihil
+                    aliquid voluptates, error assumenda inventore consectetur dolor pariatur harum suscipit aliquam a
+                    excepturi neque nobis est sed.
+                </div>
+            </div>
+        </div>
+
+        <!-- Slider -->
+
+        <div class="carousel" id="exemple">
+            <ol class="carousel__indicators">
+                <li class="active" data-slide-to="0"></li>
+                <li data-slide-to="1"></li>
+                <li data-slide-to="2"></li>
+            </ol>
+            <div class="carousel__inner">
+                <div class="carousel__slides">
+                    <div class="carousel__item">
+                        <img src="https://www.istockphoto.com/resources/images/PhotoFTLP/998044806.jpg" alt="photo">
+                    </div>
+                    <div class="carousel__item">
+                        <img src="https://images.pexels.com/photos/3408744/pexels-photo-3408744.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                            alt="photo">
+                    </div>
+                    <div class="carousel__item">
+                        <img src="https://img.geliophoto.com/krsk2020/00_krsk2020.jpg" alt="photo">
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="carousel__prev" data-slide="prev">
+                <span class="carousel__prev-icon">&lt;</span>
+            </a>
+            <a href="#" class="carousel__next" data-slide="next">
+                <span class="carousel__next-icon">&gt;</span>
+            </a>
+        </div>
+
+    </div>
+
+
+    <script src='script.js'></script>
+</body>
+
+</html>
